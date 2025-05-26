@@ -9,14 +9,20 @@ This is a simple autoclicker that can be used to keep your computer active while
    
 ![Open GUI](https://github.com/SqixCo/Idle/blob/32d9d3ed6baebf50ed884b229deec6381f3b9421/Images/JJ%20Open%20GUI.png)
 
+
+
 2. After pressing Sgtart Button
 
 ![STart Button Press](https://github.com/SqixCo/Idle/blob/34d73f4c95c4e6e6acb34193532091ff492b960c/Images/JJ%20-%20Start%20Action.png)
 
 
+
+
 3. On prolonged runnig of the app (In this use case, 2 mins almost)
 
 ![Autoclicker after running for almost 2 minutes](https://github.com/SqixCo/Idle/blob/34d73f4c95c4e6e6acb34193532091ff492b960c/Images/JJ%20Countdown%20per%20interval.png)
+
+
 
 
 
