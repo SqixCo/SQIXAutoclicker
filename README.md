@@ -5,7 +5,7 @@
 This is a simple autoclicker that can be used to keep your computer active while away for long duration. This includes your downloads, emails, messengers, remote site access, etc.
 
 ### Pictures
-
+https://github.com/SqixCo/Idle/blob/31402930b526a47a033875829dd0b3fba3cf873a/Images/JJ%20-%20Start%20Action.png
 
 
 ### Usage
