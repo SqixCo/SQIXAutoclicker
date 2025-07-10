@@ -2,7 +2,7 @@
 
 This project is licensed under the GNU General Public License v3.0  
 © 2025 Sandipan Ghosh – SQIX | support@sqix.com  
-See the [LICENSE.txt](LICENSE.txt) file for details.
+See the [LICENSE.txt](https://github.com/SqixCo/Autoclicker/blob/main/LICENSE) file for details.
 
 
 
