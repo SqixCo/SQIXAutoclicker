@@ -1,3 +1,12 @@
+## License
+
+This project is licensed under the GNU General Public License v3.0  
+© 2025 Sandipan Ghosh – SQIX | support@sqix.com  
+See the [LICENSE.txt](LICENSE.txt) file for details.
+
+
+
+
 ## JJ Autoclicker by Sqix
 =======
 
