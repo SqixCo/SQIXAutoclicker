@@ -87,7 +87,7 @@ Kiosk or demo station activity simulators
 ## Keep your computer active while away for long duration
 This is a simple autoclicker that can be used to keep your computer active while away for long duration. This includes your downloads, emails, messengers, remote site access, etc.
 
-### Pictures
+### UI Screenshots
 1. Open GUI
    
 ![Open GUI](https://github.com/SqixCo/Idle/blob/32d9d3ed6baebf50ed884b229deec6381f3b9421/Images/JJ%20Open%20GUI.png)
@@ -109,7 +109,7 @@ This is a simple autoclicker that can be used to keep your computer active while
 
 
 
-### Usage
+### How to Use
  1. App launches a GUI -  A small window opens with JJ's face whoch also has a button to start the autoclicker.
  2. The welcome message shows the status of the autoclicker.
  3. You get two buttons and you can also adjust the interval between which the autoclicker will click. The default is 120 seconds
@@ -139,3 +139,17 @@ This is a simple autoclicker that can be used to keep your computer active while
 
 
 #### TODO
+
+ Finalize main functionality (auto click at intervals)
+
+ Add support for click type (left, right, middle)
+
+ Add click interval and duration settings
+
+ Optional: Add hotkey support for Start/Stop
+
+ Optional: Add system tray minimization
+
+ Show status (active/inactive) in UI
+
+ Add click position toggle (cursor vs fixed point)
