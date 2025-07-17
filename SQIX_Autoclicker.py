@@ -19,11 +19,11 @@ class ClickerThread(QThread):
     #    self.running = True # COntrol flag
 
     def __init__(self, interval, test_mode=False):
-    super().__init__()
-    self.interval = interval
-    self.click_count = 0
-    self.running = True
-    self.test_mode = test_mode
+        super().__init__()
+        self.interval = interval
+        self.click_count = 0
+        self.running = True
+        self.test_mode = test_mode
 
 
 
