@@ -12,11 +12,19 @@ import pyautogui
 class ClickerThread(QThread):
     update_signal = pyqtSignal(str) # Signal to send status message to main
 
-    def __init__(self, interval):
-        QThread.__init__(self)
-        self.interval = interval # interval betwen clicks
-        self.click_count = 0 # Count of clicks
-        self.running = True # COntrol flag
+  # def __init__(self, interval):
+ #      QThread.__init__(self)
+   #     self.interval = interval # interval betwen clicks
+  #     self.click_count = 0 # Count of clicks
+    #    self.running = True # COntrol flag
+
+    def __init__(self, interval, test_mode=False):
+    super().__init__()
+    self.interval = interval
+    self.click_count = 0
+    self.running = True
+    self.test_mode = test_mode
+
 
 
     def run(self):
@@ -33,15 +41,29 @@ class ClickerThread(QThread):
         # Stop thread
         self.running = False
 
-    def click_screen(self):
+#    def click_screen(self):
         # Simulating mouse click without chanign cursor pos.
+#      try:
+  #          current_x, current_y = pyautogui.position()
+ #           pyautogui.click()
+   #         pyautogui.moveTo(current_x, current_y) # Return back cursor to original x,y : Placing for future enhancementsif cursor is moved and also to be extra safe
+#        except Exception as e:
+#            error_message = f"Error: {str(e)}"
+ #           print(error_message)  # Print error to terminal
+ #           self.update_signal.emit(error_message)
+
+
+    def click_screen(self):
         try:
             current_x, current_y = pyautogui.position()
-            pyautogui.click()
-            pyautogui.moveTo(current_x, current_y) # Return back cursor to original x,y : Placing for future enhancementsif cursor is moved and also to be extra safe
+            if self.test_mode:
+                print(f"[TEST MODE] Simulated click at ({current_x}, {current_y})")
+            else:
+                pyautogui.click()
+                pyautogui.moveTo(current_x, current_y)
         except Exception as e:
             error_message = f"Error: {str(e)}"
-            print(error_message)  # Print error to terminal
+            print(error_message)
             self.update_signal.emit(error_message)
 
 # Main app class
