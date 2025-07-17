@@ -24,7 +24,7 @@ class ClickerThread(QThread):
         while self.running:
             self.click_screen()
             self.click_count += 1
-            message = f"SQIX in action - The ants go marching {self.click_count} by {self.click_count} hurrah, hurrah!"
+            message = f"SQIX<sup>™</sup> in action - The ants go marching {self.click_count} by {self.click_count} hurrah, hurrah!"
             print(message)  # Print to terminal
             self.update_signal.emit(message) # Signal to update
             time.sleep(self.interval)
@@ -54,7 +54,7 @@ class AutoClickerApp(QWidget):
 
     def initUI(self):
         # Setup window
-        self.setWindowTitle('SQIX AutoClicker')
+        self.setWindowTitle('SQIX\u2122 AutoClicker')
         self.setGeometry(300, 300, 400, 300)
         main_layout = QVBoxLayout()
 
@@ -66,7 +66,7 @@ class AutoClickerApp(QWidget):
         main_layout.addWidget(face_label)
 
         # Status labels to display message
-        self.status_label = QLabel('Hi, I am SQIX and I am ready to help you play hooky', self)
+        self.status_label = QLabel('Hi, I am SQIX<sup>™</sup> and I am ready to help you play hooky', self)
         self.status_label.setAlignment(Qt.AlignCenter)
         main_layout.addWidget(self.status_label)
 
@@ -106,7 +106,7 @@ class AutoClickerApp(QWidget):
             self.clicker_thread.start()
             self.start_button.setEnabled(False)
             self.stop_button.setEnabled(True)
-            message = 'Hi, I am SQIX and I am ready to help you play hooky'
+            message = 'Hi, I am SQIX<sup>™</sup> and I am ready to help you play hooky'
             print(message)  # Print to terminal
             self.status_label.setText(message)
 
@@ -117,7 +117,7 @@ class AutoClickerApp(QWidget):
             self.clicker_thread = None
             self.start_button.setEnabled(True)
             self.stop_button.setEnabled(False)
-            message = 'SQIX is tired'
+            message = 'SQIX<sup>™</sup> is tired'
             print(message)  # Print to terminal
             self.status_label.setText(message)
 
@@ -131,7 +131,7 @@ class AutoClickerApp(QWidget):
         if self.clicker_thread:
             self.clicker_thread.stop()
             self.clicker_thread.wait()
-        print("SQIX is leaving")  # Print to terminal when closing
+        print("SQIX<sup>™</sup> is leaving")  # Print to terminal when closing
         event.accept()
 
 # Main -  Entry point of the app
