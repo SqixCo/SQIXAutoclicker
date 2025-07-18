@@ -25,7 +25,13 @@ class ClickerThread(QThread):
             message = f"SQIX<sup>™</sup> in action - The ants go marching {self.click_count} by {self.click_count} hurrah, hurrah!"
             print(message)
             self.update_signal.emit(message)
-            time.sleep(self.interval)
+          #  time.sleep(self.interval)
+
+            # Break long sleep into smaller intervals for responsiveness
+            elapsed = 0
+            while elapsed < self.interval and self.running:
+                time.sleep(0.1)
+                elapsed += 0.1
 
     def stop(self):
         # Gracefully stop the thread
