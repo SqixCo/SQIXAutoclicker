@@ -90,21 +90,29 @@ This is a simple autoclicker that can be used to keep your computer active while
 ### UI Screenshots
 1. Open GUI
    
-![Open GUI](https://github.com/SqixCo/Idle/blob/32d9d3ed6baebf50ed884b229deec6381f3b9421/Images/JJ%20Open%20GUI.png)
+
+<img width="397" height="323" alt="open_gui" src="https://github.com/user-attachments/assets/ff4fa51e-8675-4e7f-b62c-37084d6eb2d8" />
 
 
 
-2. After pressing Sgtart Button
+2. After pressing Start Button
 
-![STart Button Press](https://github.com/SqixCo/Idle/blob/34d73f4c95c4e6e6acb34193532091ff492b960c/Images/JJ%20-%20Start%20Action.png)
+
+<img width="401" height="324" alt="Start" src="https://github.com/user-attachments/assets/94d8efbf-7964-4249-8e63-56e7ee3b4633" />
 
 
 
 
 3. On prolonged runnig of the app (In this use case, 2 mins almost)
 
-![Autoclicker after running for almost 2 minutes](https://github.com/SqixCo/Idle/blob/34d73f4c95c4e6e6acb34193532091ff492b960c/Images/JJ%20Countdown%20per%20interval.png)
 
+<img width="415" height="332" alt="running" src="https://github.com/user-attachments/assets/e169fa91-a738-4a9f-b64f-cfe7e69edd16" />
+
+
+4. Once stopped
+
+   
+<img width="399" height="321" alt="Stop" src="https://github.com/user-attachments/assets/fc52c901-335c-4af7-9d6f-e52ff4d15246" />
 
 
 
