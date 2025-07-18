@@ -28,9 +28,10 @@ class ClickerThread(QThread):
             time.sleep(self.interval)
 
     def stop(self):
+        # Gracefully stop the thread
         self.running = False
 
-    # Original click logic (commented for safety)
+    # Optional: original real clicking method (commented out for testing)
     # def click_screen(self):
     #     try:
     #         current_x, current_y = pyautogui.position()
@@ -53,6 +54,7 @@ class ClickerThread(QThread):
             error_message = f"Error: {str(e)}"
             print(error_message)
             self.update_signal.emit(error_message)
+
 
 # Main app class
 class AutoClickerApp(QWidget):
