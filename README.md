@@ -1,16 +1,16 @@
 ## License
 
 This project is licensed under the GNU General Public License v3.0  
-© 2025 Sandipan Ghosh – SQIX | support@sqix.com  
+© 2025 Sandipan Ghosh – SQIX™  | support@SQIX.com  
 See the [LICENSE.txt](https://github.com/SqixCo/Autoclicker/blob/main/LICENSE) file for details.
 
 
 
 
-## SQIX Autoclicker
+## SQIX™  Autoclicker
 =======
 
-SQIX Autoclicker is a lightweight, open-source desktop tool designed to simulate mouse clicks automatically at customizable intervals. Built for productivity, automation, and usability, it helps users keep their desktops active and handle repetitive clicking tasks effortlessly.
+SQIX™  Autoclicker is a lightweight, open-source desktop tool designed to simulate mouse clicks automatically at customizable intervals. Built for productivity, automation, and usability, it helps users keep their desktops active and handle repetitive clicking tasks effortlessly.
 
 
 ## Core Functionality
@@ -118,14 +118,14 @@ This is a simple autoclicker that can be used to keep your computer active while
 
 
 ### How to Use
- 1. App launches a GUI -  A small window opens with SQIX Logo which also has a button to start the autoclicker.
+ 1. App launches a GUI -  A small window opens with SQIX™  Logo which also has a button to start the autoclicker.
  2. The welcome message shows the status of the autoclicker.
  3. You get two buttons and you can also adjust the interval between which the autoclicker will click. The default is 120 seconds
  4. When you click Start, the app starts a background task called thread that clicks the mouse every 120 seconds by default and clicks again.
  5. When you click Stop, the app stops the background task.
  6. After each click of the Start button it plays a funny message and shows the count. The counter by default increases the count by 1 after every 120 seconds or whenever the mouse clicks the screen.
  7. You may change the interval time in the GUI.
- 8. The message also displays tha the autoclicker is stopped whn you hit the stop button and shows a funny message, "SQIX is tired"
+ 8. The message also displays tha the autoclicker is stopped whn you hit the stop button and shows a funny message, "SQIX™  is tired"
 
 
 
