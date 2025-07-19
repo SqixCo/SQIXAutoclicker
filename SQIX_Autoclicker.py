@@ -4,7 +4,7 @@ import os
 import time
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel, QSpinBox, QHBoxLayout
 from PyQt5.QtCore import QThread, pyqtSignal, Qt
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap , QIcon
 import pyautogui
 
 # Thread class for handling clicking functionality
@@ -72,6 +72,10 @@ class AutoClickerApp(QWidget):
 
     def initUI(self):
         self.setWindowTitle('SQIX\u2122 AutoClicker')
+        # Set application icon
+        icon_path = self.resource_path("Sqix-Autoclicker.ico")
+        self.setWindowIcon(QIcon(icon_path))
+        
         self.setGeometry(300, 300, 400, 300)
         main_layout = QVBoxLayout()
 
@@ -79,7 +83,7 @@ class AutoClickerApp(QWidget):
         face_label = QLabel(self)
         image_path = self.resource_path("Sqix_Horizontal_Transparent.png")
         pixmap = QPixmap(image_path)
-        face_label.setPixmap(pixmap.scaled(100, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        face_label.setPixmap(pixmap.scaled(250, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         face_label.setAlignment(Qt.AlignCenter)
         main_layout.addWidget(face_label)
 
