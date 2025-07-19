@@ -81,7 +81,7 @@ class AutoClickerApp(QWidget):
 
         # SQIX logo
         face_label = QLabel(self)
-        image_path = self.resource_path("Sqix_Horizontal_Transparent.png")
+        image_path = self.resource_path("Sqix-Autoclicker.png")
         pixmap = QPixmap(image_path)
         face_label.setPixmap(pixmap.scaled(250, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         face_label.setAlignment(Qt.AlignCenter)
