@@ -1,5 +1,6 @@
 # Import modules
 import sys
+import os
 import time
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel, QSpinBox, QHBoxLayout
 from PyQt5.QtCore import QThread, pyqtSignal, Qt
@@ -76,7 +77,8 @@ class AutoClickerApp(QWidget):
 
         # SQIX logo
         face_label = QLabel(self)
-        pixmap = QPixmap('Sqix_Horizontal_Transparent.png')
+        image_path = self.resource_path("Sqix_Horizontal_Transparent.png")
+        pixmap = QPixmap(image_path)
         face_label.setPixmap(pixmap.scaled(100, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         face_label.setAlignment(Qt.AlignCenter)
         main_layout.addWidget(face_label)
@@ -111,6 +113,16 @@ class AutoClickerApp(QWidget):
 
         main_layout.addLayout(button_layout)
         self.setLayout(main_layout)
+
+    def resource_path(self, relative_path):
+        """ Get absolute path to resource (image, etc.), works for dev and PyInstaller """
+        try:
+            # PyInstaller creates a temp folder and stores path in _MEIPASS
+            base_path = sys._MEIPASS
+        except AttributeError:
+            base_path = os.path.abspath(".")
+
+        return os.path.join(base_path, relative_path)
 
     def start_clicking(self):
         if not self.clicker_thread:

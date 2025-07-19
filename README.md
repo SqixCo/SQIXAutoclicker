@@ -142,8 +142,10 @@ This is a simple autoclicker that can be used to keep your computer active while
 3. Enable or disable clicking instantly with a simple keyboard shortcut.
 4. Clean interface with start/stop controls and status indicator. Designed for simplicity.
 5. Runs quietly in the background with a tray icon for quick access and minimal distraction.
-6. 
 
+### Windows build
+
+```python -m PyInstaller --onefile --windowed --add-data "Sqix_Horizontal_Transparent.png;." SQIX_Autoclicker.py```
 
 
 #### TODO
