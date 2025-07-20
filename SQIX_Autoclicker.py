@@ -81,7 +81,7 @@ class AutoClickerApp(QWidget):
 
         # SQIX logo
         face_label = QLabel(self)
-        image_path = self.resource_path("Sqix_Horizontal_Transparent.png")
+        image_path = self.resource_path("Sqix_Autoclicker.jpg")
         print(f"Image path: {image_path}")
         print(f"Image exists: {os.path.exists(image_path)}")
 
