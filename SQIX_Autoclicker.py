@@ -81,17 +81,10 @@ class AutoClickerApp(QWidget):
 
         # SQIX logo
         face_label = QLabel(self)
-        image_path = self.resource_path("Sqix_Autoclicker.jpg")
-        print(f"Image path: {image_path}")
-        print(f"Image exists: {os.path.exists(image_path)}")
-
-        pixmap = QPixmap(image_path)
-        if pixmap.isNull():
-            print("Failed to load image!")
-        else:
-            face_label.setPixmap(pixmap.scaled(250, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
-            face_label.setAlignment(Qt.AlignCenter)
-            main_layout.addWidget(face_label)
+        pixmap = QPixmap('Sqix-Autoclicker.png')
+        face_label.setPixmap(pixmap.scaled(100, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        face_label.setAlignment(Qt.AlignCenter)
+        main_layout.addWidget(face_label)
 
         # Status message
         self.status_label = QLabel('Hi, I am SQIX<sup>™</sup> and I am ready to help you play hooky', self)
