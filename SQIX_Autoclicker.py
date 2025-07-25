@@ -73,7 +73,7 @@ class AutoClickerApp(QWidget):
     def initUI(self):
         self.setWindowTitle('SQIX\u2122 AutoClicker')
         # Set application icon
-        icon_path = self.resource_path("Sqix-Autoclicker.ico")
+        icon_path = self.resource_path("images/Sqix-Autoclicker.ico")
         self.setWindowIcon(QIcon(icon_path))
         
         self.setGeometry(300, 300, 400, 300)
@@ -81,11 +81,11 @@ class AutoClickerApp(QWidget):
 
         # SQIX logo
         face_label = QLabel(self)
-        pixmap = QPixmap('SQIX-Autoclicker.png')
+        pixmap_path = self.resource_path("images/SQIX-Autoclicker.png")
+        pixmap = QPixmap(pixmap_path)
         face_label.setPixmap(pixmap.scaled(100, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         face_label.setAlignment(Qt.AlignCenter)
         main_layout.addWidget(face_label)
-
         # Status message
         self.status_label = QLabel('Hi, I am SQIX<sup>™</sup> and I am ready to help you play hooky', self)
         self.status_label.setAlignment(Qt.AlignCenter)

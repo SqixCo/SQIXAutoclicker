@@ -145,7 +145,7 @@ This is a simple autoclicker that can be used to keep your computer active while
 
 ### Windows build
 
-```python -m PyInstaller --onefile --windowed --add-data "Sqix_Horizontal_Transparent.png;." SQIX_Autoclicker.py```
+```python -m PyInstaller --onefile --windowed --icon=images/Sqix-Autoclicker.ico --add-data "images/*;images" SQIX_Autoclicker.py```
 
 
 #### TODO
